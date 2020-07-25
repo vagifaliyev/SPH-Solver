@@ -50,7 +50,7 @@ Then run:
 
 to execute the program.
 
-Meanwhile, if you want to apply OpenMP to accelerate the progamme, you can cancel the comment of my code to realise it and remember to set the OpenMP environment in your C++ IDE with include omp.h file.
+Meanwhile, if you want to apply OpenMP to accelerate the progamme, you can cancel the comment of my code to disable it also remember to set the OpenMP environment in your C++ IDE with include omp.h file.
 
 ## Structure 
 
@@ -97,7 +97,7 @@ for SPH_main class, there are:
 
 ## Documentation
 
-[SPH Documentation](https://github.com/acse-2019/acse-4-sph-lubhair-yoo-ar/blob/master/html/index.html)
+[SPH Documentation](https://github.com/vagifaliyev/SPH-Solver/blob/master/Lubhair%20SPH%20Report.pdf)
 
 ## Testing
 
@@ -123,33 +123,32 @@ python run_tests.py
 
 ## Functionality
 
-We realised forward Euler scheme to update the status of particles with fixed initial time stepping setting.
+Realised Forward Euler scheme to update the status of particles with fixed initial time stepping setting.
 
-We wrote stencil finding neighbour algorithm, but it cannot work properly. 
+Wrote stencil finding neighbour algorithm, but it does not function properly, needs update. 
 
-We wrote predictor corrector scheme to update the status of particles. It is a second-order accurate scheme with fixed timestep. Dynamic timestep is not functionning for this scheme.
+Wrote predictor corrector scheme to update the status of particles. It is a second-order accurate scheme with fixed timestep. Dynamic timestep is not functionning for this scheme.
 
-The program is able to output results to files,. Also We implemented crest velocity tracking program in python.
+The program is able to output results to files, also implemented crest velocity tracking program in python.
 
 
 ## Boundary method
 
-When the fluid particles are going to hit the wall (boundary particles), we applied the push back method to deal with problem of leak. 
+When the fluid particles are going to hit the wall (boundary particles), applied the push back method to deal with problem of leak. 
 
-We firstly compute the updated the position of particles, then we check whether it will hit the wall. If the fluid particles hit the wall, we do not update the position for this update, namely we fix the portion of particles this process of update. Meanwhile, we change the corresponding direction of velocity, and add a lost rate of velocity to decrease the velocity. For example, if the particle is going to hit the left boundary, we do not change the position of particle for this process of update. And we only change the horizontal velocity of particle to opposite direction (namely right), and we multiply the original horizontal velocity with a lost rate.
-
+Firstly compute the updated the position of particles, then we check whether it will hit the wall. If the fluid particles hit the wall, do not update the position for this update, namely fix the portion of particles this process of update. Meanwhile, change the corresponding direction of velocity, and add a lost rate of velocity to decrease the velocity. For example, if the particle is going to hit the left boundary, we do not change the position of particle for this process of update. And only change the horizontal velocity of particle to opposite direction (namely right), and multiply the original horizontal velocity with a lost rate.
 
 ## Parallel programming 
 
-We applied OpenMP to accelerate the programming.
+Applied OpenMP to accelerate the programming.
 
 #### Serial
 
 Forward Euler:
 
-Dx = 0.5    ：46.3803 seconds
+* Dx = 0.5    ：46.3803 seconds
 
-Dx = 0.2	 :  450.164 seconds
+* Dx = 0.2	 :  450.164 seconds
 
 Because the serial code for running condition that dx equals to 0.1 is very slow, so we have not recorded the time
 
@@ -158,16 +157,11 @@ Because the serial code for running condition that dx equals to 0.1 is very slow
 
 Forward Euler :
 
-Dx = 0.5	 : 12.9997 seconds
+* Dx = 0.5	 : 12.9997 seconds
 
-Dx = 0.2	 : 120.836 seconds
+* Dx = 0.2	 : 120.836 seconds
 
-Dx = 0.1 	 : 743.459 seconds
-
-
-## Arbitrary boundary shape
-
-Because we applied push back boundary method, so It is difficult to add arbitrary boundary shape.
+* Dx = 0.1 	 : 743.459 seconds
 
 
 ## License
