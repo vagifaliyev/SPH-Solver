@@ -14,11 +14,11 @@ surfaces. This tool implements the SPH method in C++ to solve wave generation in
 
 Initial simulation visualisation:
 
-![animation.gif](https://github.com/acse-2019/acse-4-sph-lubhair-yoo-ar/blob/master/animation-1.gif)
+![animation.gif](https://github.com/vagifaliyev/SPH-Solver/blob/master/animation-1.gif)
 
 Finer simulation visualisation:
 
-![animation.gif](https://github.com/acse-2019/acse-4-sph-lubhair-yoo-ar/blob/master/animation-2.gif)
+![animation.gif](https://github.com/vagifaliyev/SPH-Solver/blob/master/animation-2.gif)
 
 
 ### Python Post Processing 
@@ -27,9 +27,9 @@ Created using [Post Processing](https://github.com/acse-2019/acse-4-sph-lubhair-
 
 
 
-![animation.gif](https://github.com/acse-2019/acse-4-sph-lubhair-yoo-ar/blob/master/animation.gif)
+![animation.gif](https://github.com/vagifaliyev/SPH-Solver/blob/master/animation.gif)
 
-![animation.gif](https://github.com/acse-2019/acse-4-sph-lubhair-yoo-ar/blob/master/crest.png)
+![animation.gif](https://github.com/vagifaliyev/SPH-Solver/blob/master/crest.png)
 
 
 ## Installation
@@ -169,15 +169,8 @@ Dx = 0.1 	 : 743.459 seconds
 
 Because we applied push back boundary method, so It is difficult to add arbitrary boundary shape.
 
-## Authors
-
-* **Vagif Aliyev** - [Github](https://github.com/acse-va719)
-* **Ping-Chen (Rebecca) Tsai** - [Github](https://github.com/acse-va719)
-* **Ellyess Benmoufok** - [Github](https://github.com/acse-va719)
-* **Xun Xie** - [Github](https://github.com/acse-xx619)
-* **Lingaona Zhu** - [Github](https://github.com/acse-va719)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/acse-2019/acse-4-sph-lubhair-yoo-ar/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/vagifaliyev/SPH-Solver/blob/master/LICENSE) file for details
 
