@@ -1,4 +1,4 @@
-# ACSE-4-SPH
+# Smoothed Particle Hydrodynamics
 
 [Smoothed Particle Hydrodynamics](https://en.wikipedia.org/wiki/Smoothed-particle_hydrodynamics) (SPH) is a meshless
 method for solving the Navier-Stokes equation, in which fluid properties are stored on Lagrangian fluid particles (i.e. on
