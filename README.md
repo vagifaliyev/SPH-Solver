@@ -23,7 +23,7 @@ Finer simulation visualisation:
 
 ### Python Post Processing 
 
-Created using [Post Processing](https://github.com/acse-2019/acse-4-sph-lubhair-yoo-ar/blob/master/Post_processing.ipynb)
+Created using [Post Processing](https://github.com/vagifaliyev/SPH-Solver/blob/master/Post_processing.ipynb)
 
 
 
